@@ -1,4 +1,4 @@
-package com.example.project_wee
+package com.gasopay.mb
 
 import io.flutter.embedding.android.FlutterActivity
 

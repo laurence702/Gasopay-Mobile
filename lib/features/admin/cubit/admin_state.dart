@@ -1,4 +1,4 @@
-part of 'rider_cubit.dart';
+part of 'admin_cubit.dart';
 
 enum AdminStatus { initial, loading, loaded, error }
 

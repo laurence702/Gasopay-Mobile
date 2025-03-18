@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:project_wee/config/theme/config.dart';
 import 'package:project_wee/features/auth/cubit/auth_cubit.dart';
 
 import 'config/route/config.dart';
@@ -15,6 +16,7 @@ class WeeApp extends StatelessWidget {
       ],
       child: MaterialApp.router(
         title: 'Gasopay',
+        theme: AppTheme.light,
         routeInformationParser: router.routeInformationParser,
         routerDelegate: router.routerDelegate,
         routeInformationProvider: router.routeInformationProvider,

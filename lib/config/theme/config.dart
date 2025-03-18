@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_wee/constants/app_colors.dart';
 
 class AppTheme {
   static ThemeData get light => ThemeData.light().copyWith(

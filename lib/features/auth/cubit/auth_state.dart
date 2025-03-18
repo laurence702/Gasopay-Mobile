@@ -1,6 +1,6 @@
-part of 'rider_cubit.dart';
+part of 'auth_cubit.dart';
 
-enum AuthStatus { initial, loading, loaded, error }
+enum AuthStatus { initial, loading, success, loaded, error }
 
 class AuthState<T> extends Equatable {
   final AuthStatus status;

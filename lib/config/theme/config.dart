@@ -18,7 +18,7 @@ class AppTheme {
           ),
           isDense: true,
           filled: true,
-          fillColor: const Color(0xFFF8FAF9),
+          fillColor: const Color(0xFFF3F5FA),
         ),
       );
 }

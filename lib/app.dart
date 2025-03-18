@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:project_wee/features/auth/cubit/rider_cubit.dart';
+import 'package:project_wee/features/auth/cubit/auth_cubit.dart';
 
 import 'config/route/config.dart';
 

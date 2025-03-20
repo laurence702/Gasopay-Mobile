@@ -16,7 +16,7 @@ final router = GoRouter(
     GoRoute(
       parentNavigatorKey: rootNavigationKey,
       path: RoutePaths.login,
-      builder: (_, __) => const LoginScreen(),
+      builder: (_, __) => LoginScreen(),
     ),
   ],
 );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_wee/constants/app_colors.dart';
 
 import '../../../widgets/app_button.dart';
 import '../../../widgets/app_textfield.dart';

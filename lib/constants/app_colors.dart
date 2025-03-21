@@ -7,7 +7,7 @@ class AppColors {
   static Color get darkCard => const Color(0xFF202938);
 
   static Color get lightBG => const Color(0xFFF0F0F0);
-  static Color get lightCard => const Color(0xFFF0F0F0);
+  static Color get lightCard => const Color(0xFFF3F5FA);
 
   static Color get border => const Color(0xFF333C4B);
 }

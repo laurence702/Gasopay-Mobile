@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:project_wee/config/route/config.dart';
 
 part 'auth_state.dart';
 
@@ -13,5 +14,6 @@ class AuthCubit extends Cubit<AuthState> {
       message: 'User login successfully!',
       status: AuthStatus.success,
     ));
+    router.go(RoutePaths.riderHome);
   }
 }

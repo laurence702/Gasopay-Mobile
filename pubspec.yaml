@@ -13,6 +13,8 @@ dependencies:
   flutter_bloc: ^9.1.0
   equatable: ^2.0.7
   go_router: ^14.2.3
+  get_it: ^8.0.3
+  toastification: ^2.3.0
 
 dev_dependencies:
   flutter_test:

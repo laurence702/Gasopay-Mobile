@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:toastification/toastification.dart';
 
 import '../../../widgets/app_button.dart';
 import '../../../widgets/app_textfield.dart';
@@ -18,7 +19,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AuthCubit, AuthState>(
+    return BlocConsumer<AuthCubit, AuthState>(
+      listener: (context, state) {
+        //
+        if (state.status == AuthStatus.error) {
+          toastification.show(
+            title: Text(state.message!),
+            type: ToastificationType.error,
+            style: ToastificationStyle.fillColored,
+            autoCloseDuration: const Duration(seconds: 2),
+          );
+        }
+      },
       builder: (context, state) {
         return Scaffold(
           body: SafeArea(
@@ -73,6 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   _onLoginPressed() {
+    debugPrint('emailController --> ${_emailController.text}');
     // Validate fields
     context.read<AuthCubit>().login(
           userID: _emailController.text,

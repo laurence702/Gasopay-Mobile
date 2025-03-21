@@ -31,6 +31,7 @@ class AppTextField extends StatelessWidget {
             decoration: InputDecoration(
               suffixIcon: (endIcon != null) ? Icon(endIcon) : null,
             ),
+            controller: controller,
           ),
         ],
       ),

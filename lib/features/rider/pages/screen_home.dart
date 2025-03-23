@@ -46,12 +46,25 @@ class RiderHomeScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Amina R.',
-                            style: TextStyle(
-                              fontSize: 8 * 2.7,
-                              fontWeight: FontWeight.w700,
-                            ),
+                          Row(
+                            children: [
+                              const Expanded(
+                                child: Text(
+                                  'Amina R.',
+                                  style: TextStyle(
+                                    fontSize: 8 * 2.7,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: 5),
+                              IconButton(
+                                onPressed: () => debugPrint('wee'),
+                                icon: const Icon(
+                                  Icons.settings,
+                                ),
+                              ),
+                            ],
                           ),
                           const Text(
                             'user@email.com • ⭐️ 4.5',

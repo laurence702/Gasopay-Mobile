@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_wee/constants/app_assets.dart';
 import 'package:project_wee/constants/app_colors.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 
 import '../widgets/list_item.dart';
 import '../widgets/stat_card.dart';
@@ -73,12 +74,21 @@ class RiderHomeScreen extends StatelessWidget {
                             ),
                           ),
                           const Spacer(),
-                          Align(
+                          InkWell(
+                            onTap: () => debugPrint('statement'),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: QrImageView(
+                                data: 'user@email.com',
+                                size: 70,
+                                version: QrVersions.auto,
+                              ),
+                            ),
+                          ),
+                          const Align(
                             alignment: Alignment.center,
-                            child: Container(
-                              height: 80,
-                              width: 80,
-                              color: Colors.black,
+                            child: Text(
+                              'Tap to enlarge',
                             ),
                           ),
                           const Spacer(),

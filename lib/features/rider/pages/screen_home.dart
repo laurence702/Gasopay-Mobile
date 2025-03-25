@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_wee/config/route/config.dart';
 import 'package:project_wee/constants/app_assets.dart';
 import 'package:project_wee/constants/app_colors.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -60,7 +61,8 @@ class RiderHomeScreen extends StatelessWidget {
                               ),
                               const SizedBox(width: 5),
                               IconButton(
-                                onPressed: () => debugPrint('wee'),
+                                onPressed: () =>
+                                    router.push(RoutePaths.riderSettings),
                                 icon: const Icon(
                                   Icons.settings,
                                 ),

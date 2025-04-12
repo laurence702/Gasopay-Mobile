@@ -89,18 +89,18 @@ class RiderHomeScreen extends StatelessWidget {
                                     children: [
                                       QrImageView(
                                         data: 'user@email.com',
-                                        size: 150,
+                                        size: 200,
                                         version: QrVersions.auto,
                                       ),
                                       const Text(
                                         'Amina R.',
                                         style: TextStyle(
-                                          fontSize: 8 * 2.7,
+                                          fontSize: 8 * 2.5,
                                           fontWeight: FontWeight.w700,
                                         ),
                                       ),
                                       const Text(
-                                        'user@email.com • ⭐️ 4.5',
+                                        'user@email.com',
                                         style: TextStyle(
                                           fontSize: 8 * 1.6,
                                         ),

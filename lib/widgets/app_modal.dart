@@ -4,10 +4,11 @@ import 'package:material_dialogs/dialogs.dart';
 import 'app_buttons.dart';
 
 class AppModal {
-  static void show({
+  static void showMessage({
     required BuildContext context,
     required String title,
-    required String message,
+    required String? message,
+    Widget? child,
     ModalStyle modalStyle = ModalStyle.ok,
     VoidCallback? onOk,
     VoidCallback? onYes,
@@ -35,6 +36,28 @@ class AppModal {
     );
   }
 
+  static void show({
+    required BuildContext context,
+    required Widget child,
+    ModalStyle modalStyle = ModalStyle.none,
+    VoidCallback? onOk,
+    VoidCallback? onYes,
+    VoidCallback? onNo,
+  }) {
+    Dialogs.materialDialog(
+      context: context,
+      color: Theme.of(context).scaffoldBackgroundColor,
+      customView: child,
+      actionsBuilder: (context) => _buildDialogActions(
+        context,
+        modalStyle: modalStyle,
+        onOk: onOk,
+        onYes: onYes,
+        onNo: onNo,
+      ),
+    );
+  }
+
   static List<Widget> _buildDialogActions(
     BuildContext context, {
     required ModalStyle modalStyle,
@@ -43,6 +66,8 @@ class AppModal {
     VoidCallback? onNo,
   }) {
     switch (modalStyle) {
+      case ModalStyle.none:
+        return [];
       case ModalStyle.ok:
         return [
           AppTextButton(
@@ -71,4 +96,4 @@ class AppModal {
   }
 }
 
-enum ModalStyle { ok, yesNo }
+enum ModalStyle { ok, yesNo, none }

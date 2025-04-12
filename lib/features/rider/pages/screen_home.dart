@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project_wee/config/route/config.dart';
 import 'package:project_wee/constants/app_assets.dart';
 import 'package:project_wee/constants/app_colors.dart';
+import 'package:project_wee/widgets/app_modal.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 import '../widgets/list_item.dart';
@@ -80,10 +81,38 @@ class RiderHomeScreen extends StatelessWidget {
                             onTap: () => debugPrint('statement'),
                             child: Align(
                               alignment: Alignment.center,
-                              child: QrImageView(
-                                data: 'user@email.com',
-                                size: 70,
-                                version: QrVersions.auto,
+                              child: GestureDetector(
+                                onTap: () => AppModal.show(
+                                  context: context,
+                                  modalStyle: ModalStyle.ok,
+                                  child: Column(
+                                    children: [
+                                      QrImageView(
+                                        data: 'user@email.com',
+                                        size: 150,
+                                        version: QrVersions.auto,
+                                      ),
+                                      const Text(
+                                        'Amina R.',
+                                        style: TextStyle(
+                                          fontSize: 8 * 2.7,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                      const Text(
+                                        'user@email.com • ⭐️ 4.5',
+                                        style: TextStyle(
+                                          fontSize: 8 * 1.6,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                child: QrImageView(
+                                  data: 'user@email.com',
+                                  size: 70,
+                                  version: QrVersions.auto,
+                                ),
                               ),
                             ),
                           ),

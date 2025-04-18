@@ -7,6 +7,9 @@ class RiderSettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Settings'),
+      ),
       body: SafeArea(
           child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),

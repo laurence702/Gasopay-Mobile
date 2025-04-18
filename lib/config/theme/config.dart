@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData get light => ThemeData.light().copyWith(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          scrolledUnderElevation: 0,
+          centerTitle: true,
+        ),
         inputDecorationTheme: InputDecorationTheme(
           border: const OutlineInputBorder(),
           enabledBorder: OutlineInputBorder(

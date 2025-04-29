@@ -90,8 +90,6 @@ class AppModal {
             variant: ButtonVariant.secondary,
           ),
         ];
-      default:
-        return [];
     }
   }
 }

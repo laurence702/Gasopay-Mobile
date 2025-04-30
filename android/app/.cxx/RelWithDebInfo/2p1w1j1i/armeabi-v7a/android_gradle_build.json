@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/Users/wollow/Flutter/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/wollow/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/wollow/workspace/gasopay/gasopay-mobile/android/app/.cxx/RelWithDebInfo/2p1w1j1i/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/wollow/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/wollow/workspace/gasopay/gasopay-mobile/android/app/.cxx/RelWithDebInfo/2p1w1j1i/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {},
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/wollow/Library/Android/sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/wollow/Library/Android/sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

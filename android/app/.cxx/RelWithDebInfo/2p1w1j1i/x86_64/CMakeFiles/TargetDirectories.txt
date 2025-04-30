@@ -1,0 +1,2 @@
+/Users/wollow/workspace/gasopay/gasopay-mobile/android/app/.cxx/RelWithDebInfo/2p1w1j1i/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/wollow/workspace/gasopay/gasopay-mobile/android/app/.cxx/RelWithDebInfo/2p1w1j1i/x86_64/CMakeFiles/edit_cache.dir
